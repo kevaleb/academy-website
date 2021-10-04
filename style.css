@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.about-me {
+    background: #222;
+    padding: 24px;
+    height: 100vh;
+}
+.about-me:after {
+    content: '\00a0';
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+.about-me > hgroup {
+    display: inline-block;
+    vertical-align: middle
+}
+.about-me > hgroup >.photo {
+    position: relative;
+    top: 0;
+    display: block;
+    margin: 0 auto 48px auto;
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 250px;
+    border: 1px solid #f16;
+    box-shadow: 0 0 0px 6px #222 inset ;
+    
+    transition: all .3s ease-in 0s;
+}
+.about-me > hgroup:hover >.photo {
+    width: 350px;
+    height: 350px;
+    top: -15px;
+}
+.about-me > hgroup > h1 {
+    text-align: center;
+    margin: 0 0 12px 0;
+    font: 800 48px/60px 'Stick No Bills', sans-serif;
+    color: #fff;
+}
+.about-me > hgroup > p {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 24px;
+    font: 300 18px/24px 'Roboto';
+    color: #fff;
+}
+.about-me > hgroup > a.button {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    background: #222;
+    text-decoration: none;
+    color: #f16;
+    padding: 12px 36px;
+    border-radius: 96px;
+    text-transform: uppercase;
+    border: 3px solid #f16;
+    transition: all .3s ease-in-out 0s;
+    
+    font: 800 30px/30px 'Stick No Bills', sans-serif;
+}
+.about-me > hgroup > a.button:hover {
+    background: #f16;
+    color: #fff;
+    top: -12px;
+}
+
+
+.about-me > hgroup > article {
+    color: #fff;
+}
